@@ -64,15 +64,15 @@
       <div class="fwq-rongl">
         <div class="jindu1">
           <p>CPU信息</p>
-          <el-progress class="jindu2" type="circle" stroke-width="10" :percentage="25"></el-progress>
+          <el-progress class="jindu2" type="circle" :stroke-width="10"  :percentage="25"></el-progress>
         </div>
         <div class="jindu1">
           <p>机器内存容量</p>
-          <el-progress class="jindu2" type="circle" stroke-width="10" :percentage="35"></el-progress>
+          <el-progress class="jindu2" type="circle" :stroke-width="10"  :percentage="35"></el-progress>
         </div>
         <div class="jindu1">
           <p>硬盘容量</p>
-        <el-progress class="jindu2" type="circle" stroke-width="10" :percentage="65"></el-progress>
+        <el-progress class="jindu2" type="circle" :stroke-width="10" :percentage="65"></el-progress>
         </div>
       </div>
     </div>
@@ -131,15 +131,15 @@
       <div class="fwq-rongl">
         <div class="jindu1">
           <p>CPU信息</p>
-          <el-progress class="jindu2" type="circle" stroke-width="10" :percentage="25"></el-progress>
+          <el-progress class="jindu2" type="circle" :stroke-width="10" :percentage="25"></el-progress>
         </div>
         <div class="jindu1">
           <p>机器内存容量</p>
-          <el-progress class="jindu2" type="circle" stroke-width="10" :percentage="35"></el-progress>
+          <el-progress class="jindu2" type="circle" :stroke-width="10" :percentage="35"></el-progress>
         </div>
         <div class="jindu1">
           <p>硬盘容量</p>
-        <el-progress class="jindu2" type="circle" stroke-width="10" :percentage="65"></el-progress>
+        <el-progress class="jindu2" type="circle" :stroke-width="10" :percentage="65"></el-progress>
         </div>
       </div>
     </div>

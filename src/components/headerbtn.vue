@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
-		<h1>后台监控系统</h1>
-		<el-button class="gobackbtn" type="info" @click="goback">返回</el-button>
+		<router-link to="/hard" class="headerbtnlink"><h1>后台监控系统</h1></router-link>
+		<el-button class="gobackbtn" type="primary" @click="goback">返回</el-button>
 	</div>
 	
 </template>
@@ -35,6 +35,9 @@
 	 	right: 50px;
 	 	top: 23px;
 	 	width: 100px;
+	 }
+	 .headerbtnlink{
+	 	text-decoration: none;
 	 }
 }
 </style>

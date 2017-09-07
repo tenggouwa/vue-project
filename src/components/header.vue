@@ -1,6 +1,6 @@
 <template>
 	<div class="header">
-		<h1>后台监控系统</h1>
+		<router-link to="/hard" class="headerlink"><h1>后台监控系统</h1></router-link>
 	</div>
 </template>
 <script>
@@ -20,6 +20,9 @@
 		font-size: 28px;
 		margin-left: 40px;
 		line-height: 80px;
+	 }
+	 .headerlink{
+	 	text-decoration: none;
 	 }
 }
 </style>

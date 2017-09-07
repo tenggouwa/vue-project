@@ -16,7 +16,7 @@
         <el-checkbox label="记住用户名和密码" name="type"></el-checkbox>
      </div>
      <div class="loginbtn">
-       <el-button class="loginbtn1" type="primary">登录</el-button>
+       <el-button class="loginbtn1" type="primary" @click="loginbtn">登 录</el-button>
      </div>
     </div>
   </div>
@@ -32,7 +32,12 @@ export default {
       msg: 'index'
     }
   },
-  
+  methods:{
+    loginbtn() {
+      alert("你想登陆吗？叫一声爸爸再点击确定就好了！");
+        this.$router.push({path:'/hard'})
+      }
+  }
 }
 </script>
 <style>
@@ -129,5 +134,6 @@ body{
 .loginbtn1{
   width: 452px;
   height: 56px;
+  font-size: 24px !important;
 }
 </style>

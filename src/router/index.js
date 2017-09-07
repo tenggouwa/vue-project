@@ -15,12 +15,11 @@ import Softadd from 'views/softadd'
 import Softyyjk from 'views/softyyjk'
 import Datarecord from 'views/datarecord'
 
-export default new Router({
-  routes: [
+export default [
     {
       path: '/',
       name: 'Hello',
-      component: Hello
+      component: Soft
     },
     {
       path: '/index',
@@ -63,5 +62,3 @@ export default new Router({
       component: Datarecord
     }
   ]
-
-})

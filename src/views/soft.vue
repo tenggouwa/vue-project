@@ -15,13 +15,12 @@
           style="width: 100%">
           <el-table-column
             prop="num"
-            label="项目编号"
-            width="">
+            label="项目编号">
           </el-table-column>
           <el-table-column
             prop="name"
             label="项目名称"
-            width="">
+            width="150">
           </el-table-column>
           <el-table-column
             prop="infor"
@@ -41,15 +40,18 @@
           </el-table-column>
           <el-table-column
             prop="starttime"
-            label="创建时间">
+            label="创建时间"
+            width="110">
           </el-table-column>
           <el-table-column
             prop="endtime"
-            label="更新时间">
+            label="更新时间"
+            width="110">
           </el-table-column>
           <el-table-column
             prop="jiedian"
-            label="节点监控">
+            label="节点监控"
+            width="100">
             <template scope="scope">
               <el-button @click="softjiedian" type="text">查看</el-button>
             </template>
@@ -57,6 +59,7 @@
           <el-table-column
             prop="error"
             label="异常通知"
+            width="100"
             >
             <template scope="scope">
               <el-button
@@ -68,14 +71,16 @@
           </el-table-column>
           <el-table-column
             prop="controler"
-            label="管理者">
+            label="管理者"
+            width="100">
             <template scope="scope">
               <el-button @click="softmanger" type="text">查看</el-button>
             </template>
           </el-table-column>
           <el-table-column
             prop="app"
-            label="应用监控">
+            label="应用监控"
+            width="100">
             <template scope="scope">
               <el-button @click="softyyjk" type="text">查看</el-button>
             </template>
@@ -130,7 +135,7 @@ export default {
       input:'',
       tableData: [{
           num: 'DjuiS5789',
-          name: '国网服务器组1',
+          name: '国网服务器组100',
           infor: '不在服务区',
           componey: '杭州复杂美科技有限公司',
           vbanben: '内测版',

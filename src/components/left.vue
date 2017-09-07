@@ -3,9 +3,7 @@
 		<el-col class="left-1">
 		   <!--  <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" theme="dark"> -->
 		   <!-- <el-menu :default-active="$route.path" mode="vertical" default-active="2" class="el-menu-vertical-demo" theme="dark" router> -->
-		   <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
-               theme="dark"
-               router>
+		   <el-menu :default-active="$route.path" class="el-menu-vertical-demo" theme="dark" router>
 		        <!-- <el-submenu index="1" class="nav">
 		          	<template slot="title">硬件监控</template>
 			        <el-menu-item index="1-1"><router-link class="leftrouter" to='/hard'>服务器列表</router-link></el-menu-item>

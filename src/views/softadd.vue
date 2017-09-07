@@ -34,10 +34,16 @@
           <!-- 添加关联服务器 -->
           <p class="softadd1forp">添加关联服务器</p>
           <el-form-item class="addfwq" label="服务器:">
-            <el-select class="addselect1" v-model="form.region">
-              <el-option label="服务器1" value="shanghai"></el-option>
-              <el-option label="服务器2" value="beijing"></el-option>
-            </el-select>
+            <template>
+              <el-select v-model="value5" multiple placeholder="请选择" class="addselect1">
+                <el-option
+                  v-for="item in options"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value">
+                </el-option>
+              </el-select>
+            </template>
           </el-form-item>
           <el-button class="addfwq1" type="primary" icon="plus"  @click="dialogFormVisible = true">添加服务器</el-button>
           <!-- 添加管理者 -->
@@ -52,7 +58,7 @@
             <el-input v-model="form.name"></el-input>
           </el-form-item>
           <el-form-item class="addformbtn">
-            <el-button class="addformbtn1" type="primary" @click="onSubmit">确定</el-button>
+            <el-button class="addformbtn1" type="primary">确定</el-button>
             <el-button class="addformbtn2">取消</el-button>
           </el-form-item>
         </el-form>
@@ -137,7 +143,15 @@ export default {
           resource: '',
           desc: ''
         },
-        formLabelWidth: '120px'
+        formLabelWidth: '120px',
+        options: [{
+          value: '选项1',
+          label: '服务器1'
+        },{
+          value: '选项2',
+          label: '服务器2'
+        }],
+        value5: []
       };
       },
       components:{
